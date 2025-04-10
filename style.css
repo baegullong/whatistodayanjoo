@@ -36,6 +36,7 @@ nav .logo {
     color: #ff02d9;
     font-size: 24px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 nav .menu {
