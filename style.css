@@ -18,7 +18,11 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #000000, #d000ff, #ff02d9);
+    background: linear-gradient(to bottom,
+            #000000 0%,
+            #2c0625 30%,
+            #5a094c 65%,
+            #970d7e 100%);
     color: white;
     height: 100vh;
 }
@@ -232,8 +236,56 @@ nav .fontChange img {
     cursor: pointer;
     transform: translateY(-10%);
 }
+
 /* END container Gear part */
+#container_TodayAnjoo {
+    height: calc(100vh - var(--nav_height) - 30px);
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 0 20px;
+}
 
-/* #container_TodayAnjoo {
+.month-accordion {
+    overflow-y: auto;
+    height: calc(100vh - var(--nav_height) - 100px);
+    ;
+}
 
-} */
+.month-toggle,
+.day-toggle {
+    background-color: #ff2ec6;
+    color: white;
+    padding: 10px 16px;
+    margin-top: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    /* width: 100%; */
+    text-align: left;
+}
+
+.day-list,
+.day-content {
+    display: none;
+    margin-left: 16px;
+}
+
+.month-block.active .day-list,
+.day-block.active .day-content {
+    display: block;
+}
+
+.day-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+
+.day-content img {
+    max-width: 32%;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
