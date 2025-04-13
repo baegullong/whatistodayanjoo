@@ -2,319 +2,934 @@
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>배굴렁배굴렁</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>배굴렁배굴렁</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <nav>
-    <div class="logo" onclick="location.href='https://baegullong.github.io/whatistodayanjoo'">굴렁</div>
-    <div class="menu">
-      <a data-target="container_Gear">Gear</a>
-      <a data-target="container_TodayAnjoo">Today anjoo</a>
-      <a data-target="container_UGG">UGG</a>
-    </div>
-    <div class="fontChange">
-      <button id="fontChangeButton"><img src="image/toBlueArchiveFont.gif"></button>
-    </div>
-  </nav>
+	<nav>
+		<div class="logo" onclick="location.href='https://baegullong.github.io/whatistodayanjoo'">굴렁</div>
+		<div class="menu">
+			<a data-target="container_Gear">Gear</a>
+			<a data-target="container_TodayAnjoo">Today anjoo</a>
+			<a data-target="container_UGG">UGG</a>
+		</div>
+		<div class="fontChange">
+			<button id="fontChangeButton"><img src="image/toBlueArchiveFont.gif"></button>
+		</div>
+	</nav>
 
-  <div class="container active" id="container_Gear">
-    <div class="profile">
-      <img src="image/profile.jpg" alt="Profile Picture" />
-      <h1>배굴렁</h1>
-    </div>
+	<div class="container active" id="container_Gear">
+		<div class="profile">
+			<img src="image/profile.jpg" alt="Profile Picture" />
+			<h1>배굴렁</h1>
+		</div>
 
-    <div class="tabs">
-      <a href="#section_Pcspecs">PC Specs</a>
-      <a href="#section_Gear">Gear</a>
-      <a href="#section_SubPC">Sub PC</a>
-      <a href="#section_SubPCGear">Sub PC Gear</a>
-      <a href="#section_Others">Others</a>
-    </div>
-    <!-- scroll bar -->
-    <div class="scroll_progress"></div>
+		<div class="tabs">
+			<a href="#section_Pcspecs">PC Specs</a>
+			<a href="#section_Gear">Gear</a>
+			<a href="#section_SubPC">Sub PC</a>
+			<a href="#section_SubPCGear">Sub PC Gear</a>
+			<a href="#section_Others">Others</a>
+		</div>
+		<!-- scroll bar -->
+		<div class="scroll_progress"></div>
 
-    <div class="main_section">
-      <div class="section" id="section_Pcspecs">
-        <h2>PC Specs</h2>
-        <div class="grid">
-          <div class="card">
-            <div class="badge">CPU</div>
-            <img src="image/PC_specs/CPU_783D.png" alt="CPU_783D" />
-            <p class="product-name">AMD 7800X3D</p>
-          </div>
-          <div class="card">
-            <div class="badge">M/B</div>
-            <img src="image/PC_specs/MB_B650Mmortar.png" alt="MB_B650Mmortar" />
-            <p class="product-name">MSI B650M Mortar</p>
-          </div>
-          <div class="card">
-            <div class="badge">RAM</div>
-            <img src="image/PC_specs/RAM_KingBank6400MHz.png" alt="RAM_KingBank 6400MHz" />
-            <p class="product-name">KingBank 6400MHz 32GB × 2</p>
-          </div>
-          <div class="card">
-            <div class="badge">VGA</div>
-            <img src="image/PC_specs/VGA_MSI4080GamingSlim.png" alt="VGA_MSI4080GamingSlim" />
-            <p class="product-name">MSI 4080 GamingSlim</p>
-          </div>
-          <div class="card">
-            <div class="badge">SSD</div>
-            <img src="image/PC_specs/SSD_990pro.png" alt="SSD_990pro" />
-            <p class="product-name">Samsung 990 Pro 2TB</p>
-          </div>
-          <div class="card">
-            <div class="badge">SSD sub</div>
-            <img src="image/PC_specs/SSDsub_SN850X.png" alt="SSDsub_SN850X" />
-            <p class="product-name">WD SN850X 2TB</p>
-          </div>
-          <div class="card">
-            <div class="badge">SSD sub</div>
-            <img src="image/PC_specs/SSDsub_MP600pro.png" alt="SSDsub_MP600pro" />
-            <p class="product-name">Corsair MP600 pro<br>2TB (NVMe to PCie)</p>
-          </div>
-          <div class="card">
-            <div class="badge">HDD</div>
-            <img src="image/PC_specs/HDD_WDblue.png" alt="HDD_WDblue" />
-            <p class="product-name">WD Blue 8TB</p>
-          </div>
-          <div class="card">
-            <div class="badge">Case</div>
-            <img src="image/PC_specs/Case_3RSYSs403Q.png" alt="Case_3RSYSs403Q" />
-            <p class="product-name">3RSYS S403 Quiet</p>
-          </div>
-          <div class="card">
-            <div class="badge">CPU Cooling</div>
-            <img src="image/PC_specs/CPUCooling_WCL360.png" alt="CPUCooling_WCL360" />
-            <p class="product-name">3RSYS WCL<br>360 ARGB</p>
-          </div>
-          <div class="card">
-            <div class="badge">PSU</div>
-            <img src="image/PC_specs/PSU_FSP850W.png" alt="PSU_FSP850W" />
-            <p class="product-name">FSP HYDRO<br>850W ATX3.0</p>
-          </div>
-        </div>
-      </div>
+		<div class="main_section scroll_page">
+			<div class="section" id="section_Pcspecs">
+				<h2>PC Specs</h2>
+				<div class="grid">
+					<div class="card">
+						<div class="badge">CPU</div>
+						<img src="image/PC_specs/CPU_783D.png" alt="CPU_783D" />
+						<p class="product-name">AMD 7800X3D</p>
+					</div>
+					<div class="card">
+						<div class="badge">M/B</div>
+						<img src="image/PC_specs/MB_B650Mmortar.png" alt="MB_B650Mmortar" />
+						<p class="product-name">MSI B650M Mortar</p>
+					</div>
+					<div class="card">
+						<div class="badge">RAM</div>
+						<img src="image/PC_specs/RAM_KingBank6400MHz.png" alt="RAM_KingBank 6400MHz" />
+						<p class="product-name">KingBank 6400MHz 32GB × 2</p>
+					</div>
+					<div class="card">
+						<div class="badge">VGA</div>
+						<img src="image/PC_specs/VGA_MSI4080GamingSlim.png" alt="VGA_MSI4080GamingSlim" />
+						<p class="product-name">MSI 4080 GamingSlim</p>
+					</div>
+					<div class="card">
+						<div class="badge">SSD</div>
+						<img src="image/PC_specs/SSD_990pro.png" alt="SSD_990pro" />
+						<p class="product-name">Samsung 990 Pro 2TB</p>
+					</div>
+					<div class="card">
+						<div class="badge">SSD sub</div>
+						<img src="image/PC_specs/SSDsub_SN850X.png" alt="SSDsub_SN850X" />
+						<p class="product-name">WD SN850X 2TB</p>
+					</div>
+					<div class="card">
+						<div class="badge">SSD sub</div>
+						<img src="image/PC_specs/SSDsub_MP600pro.png" alt="SSDsub_MP600pro" />
+						<p class="product-name">Corsair MP600 pro<br>2TB (NVMe to PCie)</p>
+					</div>
+					<div class="card">
+						<div class="badge">HDD</div>
+						<img src="image/PC_specs/HDD_WDblue.png" alt="HDD_WDblue" />
+						<p class="product-name">WD Blue 8TB</p>
+					</div>
+					<div class="card">
+						<div class="badge">Case</div>
+						<img src="image/PC_specs/Case_3RSYSs403Q.png" alt="Case_3RSYSs403Q" />
+						<p class="product-name">3RSYS S403 Quiet</p>
+					</div>
+					<div class="card">
+						<div class="badge">CPU Cooling</div>
+						<img src="image/PC_specs/CPUCooling_WCL360.png" alt="CPUCooling_WCL360" />
+						<p class="product-name">3RSYS WCL<br>360 ARGB</p>
+					</div>
+					<div class="card">
+						<div class="badge">PSU</div>
+						<img src="image/PC_specs/PSU_FSP850W.png" alt="PSU_FSP850W" />
+						<p class="product-name">FSP HYDRO<br>850W ATX3.0</p>
+					</div>
+				</div>
+			</div>
 
-      <div class="section" id="section_Gear">
-        <h2>Gear</h2>
-        <div class="grid">
+			<div class="section" id="section_Gear">
+				<h2>Gear</h2>
+				<div class="grid">
 
-          <div class="card">
-            <div class="badge">Monitor</div>
-            <img src="image/Gear/Monitor_PG248QP.png" alt="Monitor_PG248QP" />
-            <p class="product-name">ASUS PG248QP</p>
-          </div>
-          <div class="card">
-            <div class="badge">Monitor sub</div>
-            <img src="image/Gear/Monitorsub_G7png.png" alt="Monitorsub_G7png" />
-            <p class="product-name">Samsung G7<br>(S32BG700)</p>
-          </div>
-          <div class="card">
-            <div class="badge">Mouse</div>
-            <img src="image/Gear/Mouse_GproSuperlight2.png" alt="Mouse_GproSuperlight2" />
-            <p class="product-name">Logitech G Pro<br>Superlight 2 Pink</p>
-          </div>
-          <div class="card">
-            <div class="badge">Keyboard</div>
-            <img src="image/Gear/Keyboard_Venom60HE.png" alt="Keyboard_Venom60HE" />
-            <p class="product-name">Venom 60 HE<br>Holy60 RawHE</p>
-          </div>
-          <div class="card">
-            <div class="badge">Headsets</div>
-            <img src="image/Gear/Headsets_Blackshark.png" alt="Headsets_Blackshark" />
-            <p class="product-name">Razer BlackShark<br>V2 Pro White</p>
-          </div>
-        </div>
-      </div>
+					<div class="card">
+						<div class="badge">Monitor</div>
+						<img src="image/Gear/Monitor_PG248QP.png" alt="Monitor_PG248QP" />
+						<p class="product-name">ASUS PG248QP</p>
+					</div>
+					<div class="card">
+						<div class="badge">Monitor sub</div>
+						<img src="image/Gear/Monitorsub_G7png.png" alt="Monitorsub_G7png" />
+						<p class="product-name">Samsung G7<br>(S32BG700)</p>
+					</div>
+					<div class="card">
+						<div class="badge">Mouse</div>
+						<img src="image/Gear/Mouse_GproSuperlight2.png" alt="Mouse_GproSuperlight2" />
+						<p class="product-name">Logitech G Pro<br>Superlight 2 Pink</p>
+					</div>
+					<div class="card">
+						<div class="badge">Keyboard</div>
+						<img src="image/Gear/Keyboard_Venom60HE.png" alt="Keyboard_Venom60HE" />
+						<p class="product-name">Venom 60 HE<br>Holy60 RawHE</p>
+					</div>
+					<div class="card">
+						<div class="badge">Headsets</div>
+						<img src="image/Gear/Headsets_Blackshark.png" alt="Headsets_Blackshark" />
+						<p class="product-name">Razer BlackShark<br>V2 Pro White</p>
+					</div>
+				</div>
+			</div>
 
-      <div class="section" id="section_SubPC">
-        <h2>Sub PC</h2>
-        <div class="grid">
-          <div class="card">
-            <div class="badge">CPU</div>
-            <img src="image/SubPC/SubPC_CPU_5900X.png" alt="SubPC_CPU_5900X" />
-            <p class="product-name">AMD 5900X</p>
-          </div>
-          <div class="card">
-            <div class="badge">M/B</div>
-            <img src="image/SubPC/SubPC_MB_B550plus.png" alt="SubPC_MB_B550plus" />
-            <p class="product-name">ASUS TUF Gaming B550-PLUS</p>
-          </div>
-          <div class="card">
-            <div class="badge">RAM</div>
-            <img src="image/SubPC/SubPC_RAM_Samsung3200Mhz.png" alt="SubPC_RAM_Samsung3200Mhz" />
-            <p class="product-name">Samsung 3200Mhz<br>16 × 2</p>
-          </div>
-          <div class="card">
-            <div class="badge">VGA</div>
-            <img src="image/SubPC/SubPC_GPU_RX570.png" alt="SubPC_GPU_RX570" />
-            <p class="product-name">ASUS ROG STRIX RX570</p>
-          </div>
-          <div class="card">
-            <div class="badge">SSD</div>
-            <img src="image/SubPC/SubPC_SSD_PM981.png" alt="SubPC_SSD_PM981" />
-            <p class="product-name">Samsung PM981 512GB</p>
-          </div>
-          <div class="card">
-            <div class="badge">SSD sub</div>
-            <img src="image/SubPC/SubPC_SSDsub_WDBlue.png" alt="SubPC_SSDsub_WDBlue" />
-            <p class="product-name">WD Blue 3D 250GB</p>
-          </div>
-          <div class="card">
-            <div class="badge">Case</div>
-            <img src="image/SubPC/SubPC_Case_Hatch8png.png" alt="SubPC_Case_Hatch8png" />
-            <p class="product-name">아이구주 HATCH 8</p>
-          </div>
-        </div>
-      </div>
+			<div class="section" id="section_SubPC">
+				<h2>Sub PC</h2>
+				<div class="grid">
+					<div class="card">
+						<div class="badge">CPU</div>
+						<img src="image/SubPC/SubPC_CPU_5900X.png" alt="SubPC_CPU_5900X" />
+						<p class="product-name">AMD 5900X</p>
+					</div>
+					<div class="card">
+						<div class="badge">M/B</div>
+						<img src="image/SubPC/SubPC_MB_B550plus.png" alt="SubPC_MB_B550plus" />
+						<p class="product-name">ASUS TUF Gaming B550-PLUS</p>
+					</div>
+					<div class="card">
+						<div class="badge">RAM</div>
+						<img src="image/SubPC/SubPC_RAM_Samsung3200Mhz.png" alt="SubPC_RAM_Samsung3200Mhz" />
+						<p class="product-name">Samsung 3200Mhz<br>16 × 2</p>
+					</div>
+					<div class="card">
+						<div class="badge">VGA</div>
+						<img src="image/SubPC/SubPC_GPU_RX570.png" alt="SubPC_GPU_RX570" />
+						<p class="product-name">ASUS ROG STRIX RX570</p>
+					</div>
+					<div class="card">
+						<div class="badge">SSD</div>
+						<img src="image/SubPC/SubPC_SSD_PM981.png" alt="SubPC_SSD_PM981" />
+						<p class="product-name">Samsung PM981 512GB</p>
+					</div>
+					<div class="card">
+						<div class="badge">SSD sub</div>
+						<img src="image/SubPC/SubPC_SSDsub_WDBlue.png" alt="SubPC_SSDsub_WDBlue" />
+						<p class="product-name">WD Blue 3D 250GB</p>
+					</div>
+					<div class="card">
+						<div class="badge">Case</div>
+						<img src="image/SubPC/SubPC_Case_Hatch8png.png" alt="SubPC_Case_Hatch8png" />
+						<p class="product-name">아이구주 HATCH 8</p>
+					</div>
+				</div>
+			</div>
 
-      <div class="section" id="section_SubPCGear">
-        <h2>SubPC Gear</h2>
-        <div class="grid">
-          <div class="card">
-            <div class="badge">Monitor</div>
-            <img src="image/SubPC/SubPC_CPU_5900X.png" alt="SubPC_CPU_5900X" />
-            <p class="product-name">Dell AW2523HF</p>
-          </div>
-          <div class="card">
-            <div class="badge">Monitor sub</div>
-            <img src="image/SubPC/SubPC_Monitorsub_JG271L7741.png" alt="SubPC_Monitorsub_JG271L7741" />
-            <p class="product-name">정림전자 JG271L7741</p>
-          </div>
-          <div class="card">
-            <div class="badge">Mouse</div>
-            <img src="image/SubPC/SubPC_Mouse_F1MOBA.png" alt="SubPC_Mouse_F1MOBA" />
-            <p class="product-name">VGN F1 MOBA</p>
-          </div>
-          <div class="card">
-            <div class="badge">Keyboard</div>
-            <img src="image/SubPC/SubPC_Keyboard_Raven68.png" alt="SubPC_Keyboard_Raven68" />
-            <p class="product-name">Teamwolf Raven 68</p>
-          </div>
-        </div>
-      </div>
+			<div class="section" id="section_SubPCGear">
+				<h2>SubPC Gear</h2>
+				<div class="grid">
+					<div class="card">
+						<div class="badge">Monitor</div>
+						<img src="image/SubPC/SubPC_Monitor_AW2523HF.png" alt="SubPC_Monitor_AW2523HF" />
+						<p class="product-name">Dell AW2523HF</p>
+					</div>
+					<div class="card">
+						<div class="badge">Monitor sub</div>
+						<img src="image/SubPC/SubPC_Monitorsub_JG271L7741.png" alt="SubPC_Monitorsub_JG271L7741" />
+						<p class="product-name">정림전자 JG271L7741</p>
+					</div>
+					<div class="card">
+						<div class="badge">Mouse</div>
+						<img src="image/SubPC/SubPC_Mouse_F1MOBA.png" alt="SubPC_Mouse_F1MOBA" />
+						<p class="product-name">VGN F1 MOBA</p>
+					</div>
+					<div class="card">
+						<div class="badge">Keyboard</div>
+						<img src="image/SubPC/SubPC_Keyboard_Raven68.png" alt="SubPC_Keyboard_Raven68" />
+						<p class="product-name">Teamwolf Raven 68</p>
+					</div>
+				</div>
+			</div>
 
-      <div class="section" id="section_Others">
-        <h2>Others</h2>
-        <div class="grid">
-          <div class="card">
-            <div class="badge">Others</div>
-            <img src="image/Others/Others_StreamDeckMini.png" alt="Others_StreamDeckMini" />
-            <p class="product-name">StreamDeck Mini</p>
-          </div>
-          <div class="card">
-            <div class="badge">Speaker</div>
-            <img src="image/Others/Speaker_BestisanSR04.png" alt="Speaker_BestisanSR04" />
-            <p class="product-name">Bestisan SR04</p>
-          </div>
-          <div class="card">
-            <div class="badge">Keyboard</div>
-            <img src="image/Others/Keyboard_MonsGeekM5.png" alt="Keyboard_MonsGeekM5" />
-            <p class="product-name">MonsGeek M5</p>
-          </div>
-          <div class="card">
-            <div class="badge">Keyboard</div>
-            <img src="image/Others/Keyboard_HuntsmanV2.png" alt="Keyboard_HuntsmanV2" />
-            <p class="product-name">Razer Huntsman V2 Analog</p>
-          </div>
-          <div class="card">
-            <div class="badge">Keyboard</div>
-            <img src="image/Others/Keyboard_Rainy75.png" alt="Keyboard_Rainy75" />
-            <p class="product-name">Wobkey Rainy 75</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="main_section_toTop_button_div">
-        <button class="main_section_toTop_button">↑</button>
-      </div>
-    </div>
-  </div>
+			<div class="section" id="section_Others">
+				<h2>Others</h2>
+				<div class="grid">
+					<div class="card">
+						<div class="badge">Others</div>
+						<img src="image/Others/Others_StreamDeckMini.png" alt="Others_StreamDeckMini" />
+						<p class="product-name">StreamDeck Mini</p>
+					</div>
+					<div class="card">
+						<div class="badge">Speaker</div>
+						<img src="image/Others/Speaker_BestisanSR04.png" alt="Speaker_BestisanSR04" />
+						<p class="product-name">Bestisan SR04</p>
+					</div>
+					<div class="card">
+						<div class="badge">Keyboard</div>
+						<img src="image/Others/Keyboard_MonsGeekM5.png" alt="Keyboard_MonsGeekM5" />
+						<p class="product-name">MonsGeek M5</p>
+					</div>
+					<div class="card">
+						<div class="badge">Keyboard</div>
+						<img src="image/Others/Keyboard_HuntsmanV2.png" alt="Keyboard_HuntsmanV2" />
+						<p class="product-name">Razer Huntsman V2 Analog</p>
+					</div>
+					<div class="card">
+						<div class="badge">Keyboard</div>
+						<img src="image/Others/Keyboard_Rainy75.png" alt="Keyboard_Rainy75" />
+						<p class="product-name">Wobkey Rainy 75</p>
+					</div>
+				</div>
+			</div>
 
-  <div class="container" id="container_TodayAnjoo">
-    today anjoo...
-  </div>
+			<div class="main_section_toTop_button_div">
+				<button class="main_section_toTop_button">↑</button>
+			</div>
+		</div>
+	</div>
 
-  <div class="container" id="container_UGG">
-    UGG support...
-  </div>
+	<div class="container" id="container_TodayAnjoo">
+		<h2 style="margin-bottom: 15px;">오늘의 안주는 뭔가요??</h2>
+
+		<div class="scroll_progress"></div>
+		<div class="month-accordion scroll_page">
+			<div class="month-block">
+				<button class="month-toggle">📅 2025년 1월 ▾</button>
+				<div class="day-list">
+
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 1월 18일 토요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250118_1.jpg">
+							<img src="image/TodayAnjoo/20250118_2.jpg">
+							<img src="image/TodayAnjoo/20250118_3.jpg">
+							<img src="image/TodayAnjoo/20250118_4.jpg">
+							<img src="image/TodayAnjoo/20250118_5.png">
+							<p>새로 4병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 1월 19일 일요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250119_1.jpg">
+							<img src="image/TodayAnjoo/20250119_2.jpg">
+							<p>새로 3병 살구새로 0.5병 맥주 500ml</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 1월 20일 월요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250120_1.jpg">
+							<img src="image/TodayAnjoo/20250120_2.jpg">
+							<img src="image/TodayAnjoo/20250120_3.jpg">
+							<img src="image/TodayAnjoo/20250120_4.jpg">
+							<img src="image/TodayAnjoo/20250120_5.jpg">
+							<img src="image/TodayAnjoo/20250120_6.jpg">
+							<p>새로 2병 살구새로 0.5병 맥주 500ml</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 1월 21일 화요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250121_1.jpg">
+							<img src="image/TodayAnjoo/20250121_2.jpg">
+							<p>소맥 500ml 새로 3병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 1월 23일 목요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250123_1.jpg">
+							<p>새로 2.5병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 1월 24일 금요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250124_1.jpeg">
+							<p>새로 3병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 1월 25일 토요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250125_1.jpg">
+							<p>새로 4병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 1월 26일 일요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250126_1.jpg">
+							<img src="image/TodayAnjoo/20250126_2.jpg">
+							<p>새로 4병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 1월 30일 목요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250130_1.jpg">
+							<p>새로 3병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 1월 31일 금요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250131_1.jpg">
+							<img src="image/TodayAnjoo/20250131_2.jpg">
+							<img src="image/TodayAnjoo/20250131_3.jpg">
+							<p>새로 4.5병</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="month-block">
+				<button class="month-toggle">📅 2025년 2월 ▾</button>
+				<div class="day-list">
+
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 1일 토요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250201_1.jpg">
+							<p>새로 4.5병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 2일 일요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250202_1.jpg">
+							<img src="image/TodayAnjoo/20250202_2.jpg">
+							<img src="image/TodayAnjoo/20250202_3.jpg">
+							<p>새로 4병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 3일 월요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250203_1.jpg">
+							<p>새로 2병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 4일 화요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250204_1.jpg">
+							<img src="image/TodayAnjoo/20250204_2.jpg">
+							<img src="image/TodayAnjoo/20250204_3.jpg">
+							<p>새로 4병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 5일 수요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250205_1.jpg">
+							<img src="image/TodayAnjoo/20250205_2.jpg">
+							<img src="image/TodayAnjoo/20250205_3.jpg">
+							<img src="image/TodayAnjoo/20250205_4.jpg">
+							<p>새로 4병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 6일 목요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250206_1.jpg">
+							<img src="image/TodayAnjoo/20250206_2.jpg">
+							<p>새로 3병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 7일 금요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250207_1.jpg">
+							<p>새로 4병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 8일 토요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250208_1.jpg">
+							<p>새로 4병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 9일 일요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250209_1.jpg">
+							<img src="image/TodayAnjoo/20250209_2.jpg">
+							<img src="image/TodayAnjoo/20250209_3.jpg">
+							<p>새로 3병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 10일 월요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250210_1.jpg">
+							<img src="image/TodayAnjoo/20250210_2.jpg">
+							<p>새로 3병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 11일 화요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250211_1.jpg">
+							<p>새로 4병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 12일 수요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250212_1.jpg">
+							<img src="image/TodayAnjoo/20250212_2.jpg">
+							<img src="image/TodayAnjoo/20250212_3.jpg">
+							<img src="image/TodayAnjoo/20250212_4.jpg">
+							<p>진로 1병 새로 3병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 13일 목요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250213_1.jpg">
+							<p>새로 2병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 14일 금요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250214_1.jpg">
+							<img src="image/TodayAnjoo/20250214_2.jpg">
+							<img src="image/TodayAnjoo/20250214_3.jpg">
+							<img src="image/TodayAnjoo/20250214_4.jpg">
+							<img src="image/TodayAnjoo/20250214_5.jpg">
+							<img src="image/TodayAnjoo/20250214_6.jpg">
+							<p>새로 3병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 15일 토요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250215_1.jpg">
+							<img src="image/TodayAnjoo/20250215_2.jpg">
+							<p>새로 4병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 16일 일요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250216_1.jpg">
+							<p>새로 4병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 17일 월요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250217_1.jpg">
+							<p>새로 2병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 18일 화요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250218_1.jpg">
+							<img src="image/TodayAnjoo/20250218_2.jpg">
+							<img src="image/TodayAnjoo/20250218_3.jpg">
+							<img src="image/TodayAnjoo/20250218_4.jpg">
+							<p>위스키 다수 (약 3병)</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 19일 수요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250219_1.jpg">
+							<p>새로 1병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 20일 목요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250220_1.jpg">
+							<img src="image/TodayAnjoo/20250220_2.jpg">
+							<img src="image/TodayAnjoo/20250220_3.jpg">
+							<p>진로 1병 새로 1병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 21일 금요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250221_1.jpg">
+							<img src="image/TodayAnjoo/20250221_2.jpg">
+							<p>참이슬 2병</p>
+							<img src="image/TodayAnjoo/20250221_3.jpg">
+							<p>새로 3병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 22일 토요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250222_1.jpg">
+							<img src="image/TodayAnjoo/20250222_2.jpg">
+							<img src="image/TodayAnjoo/20250222_3.jpg">
+							<p>소주 3병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 23일 일요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250223_1.jpg">
+							<img src="image/TodayAnjoo/20250223_2.jpg">
+							<p>새로 4병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 24일 월요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250224_1.jpg">
+							<p>새로 1병</p>
+							<img src="image/TodayAnjoo/20250224_2.jpg">
+							<img src="image/TodayAnjoo/20250224_3.jpg">
+							<p>새로 2병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 25일 화요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250225_1.jpg">
+							<p>새로 3병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 26일 수요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250226_1.jpg">
+							<img src="image/TodayAnjoo/20250226_2.jpg">
+							<p>생맥 500cc 새로 1병</p>
+							<img src="image/TodayAnjoo/20250226_3.jpg">
+							<p>새로 4병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 27일 목요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250227_1.jpg">
+							<p>새로 1병 카스 콜드브루 500ml</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 2월 28일 금요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250228_1.jpg">
+							<p>새로 3병</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="month-block">
+				<button class="month-toggle">📅 2025년 3월 ▾</button>
+				<div class="day-list">
+
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 1일 토요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250301_1.png">
+							<p>소주 2병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 3일 월요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250303_1.jpg">
+							<img src="image/TodayAnjoo/20250303_2.jpg">
+							<img src="image/TodayAnjoo/20250303_3.jpg">
+							<img src="image/TodayAnjoo/20250303_4.jpg">
+							<p>새로 3병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 6일 목요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250306_1.jpg">
+							<p>새로 2병 카스 콜드브루 500ml</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 8일 토요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250308_1.jpg">
+							<p>새로 2병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 10일 월요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250310_1.jpg">
+							<p>새로 2병 카스 콜드브루 500ml</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 11일 화요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250311_1.jpg">
+							<img src="image/TodayAnjoo/20250311_2.jpg">
+							<p>진로 1병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 14일 금요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250314_1.jpg">
+							<img src="image/TodayAnjoo/20250314_2.jpg">
+							<img src="image/TodayAnjoo/20250314_3.jpg">
+							<p>새로 2병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 15일 토요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250315_1.jpg">
+							<img src="image/TodayAnjoo/20250315_2.jpg">
+							<p>새로 3.5병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 16일 일요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250316_1.png">
+							<p>새로 0.5병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 17일 월요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250317_1.jpg">
+							<img src="image/TodayAnjoo/20250317_2.jpg">
+							<img src="image/TodayAnjoo/20250317_3.jpg">
+							<p>새로 1병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 19일 수요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250319_1.png">
+							<p>새로 1병 crush 500ml 2캔</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 20일 목요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250320_1.jpg">
+							<p>크러쉬 500ml</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 21일 금요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250321_1.jpg">
+							<img src="image/TodayAnjoo/20250321_2.jpg">
+							<p>새로 3병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 24일 월요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250324_1.jpg">
+							<img src="image/TodayAnjoo/20250324_2.jpg">
+							<p>새로 2병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 25일 화요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250325_1.jpg">
+							<p>새로 1병 카스 콜드브루 500ml</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 27일 목요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250327_1.jpg">
+							<p>새로 2병 생맥주 500ml</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 28일 금요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250328_1.jpg">
+							<img src="image/TodayAnjoo/20250328_2.jpg">
+							<p>새로 3병</p>
+							<img src="image/TodayAnjoo/20250328_3.jpg">
+							<img src="image/TodayAnjoo/20250328_4.jpg">
+							<p>새로 2병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 29일 토요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250329_1.jpg">
+							<img src="image/TodayAnjoo/20250329_2.jpg">
+							<img src="image/TodayAnjoo/20250329_3.jpg">
+							<p>진로 2병 새로 1병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 30일 일요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250330_1.jpg">
+							<p>새로 1병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 3월 31일 월요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250331_1.jpg">
+							<img src="image/TodayAnjoo/20250331_2.jpg">
+							<p>새로 3병 카스 콜드브루 500ml</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="month-block">
+				<button class="month-toggle">📅 2025년 4월 ▾</button>
+				<div class="day-list">
+
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 4월 2일 수요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250402_1.jpg">
+							<p>새로 3병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 4월 3일 목요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250403_1.jpg">
+							<p>새로 2병 카스 콜드브루 500ml</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 4월 4일 금요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250404_1.jpg">
+							<img src="image/TodayAnjoo/20250404_2.jpg">
+							<img src="image/TodayAnjoo/20250404_3.jpg">
+							<p>참이슬 1병 + 새로 1병</p>
+							<img src="image/TodayAnjoo/20250404_4.jpg">
+							<p>소주 1.5병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 4월 5일 토요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250405_1.jpg">
+							<p>새로 3병 생맥주 500cc</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 4월 6일 일요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250406_1.jpg">
+							<img src="image/TodayAnjoo/20250406_2.jpg">
+							<p>새로 3병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 4월 7일 월요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250407_1.jpg">
+							<p>새로 3병 산토리 1/3병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 4월 9일 수요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250409_1.jpg">
+							<img src="image/TodayAnjoo/20250409_2.jpg">
+							<p>새로 2병 (1.5+산토리)</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 4월 11일 금요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250411_1.jpg">
+							<img src="image/TodayAnjoo/20250411_2.jpg">
+							<img src="image/TodayAnjoo/20250411_3.jpg">
+							<img src="image/TodayAnjoo/20250411_4.jpg">
+							<img src="image/TodayAnjoo/20250411_5.jpg">
+							<p>새로 3병</p>
+							<img src="image/TodayAnjoo/20250411_6.png">
+							<p>소주 1병</p>
+						</div>
+					</div>
+					<div class="day-block">
+						<button class="day-toggle">🗓️ 4월 12일 토요일 ▾</button>
+						<div class="day-content">
+							<img src="image/TodayAnjoo/20250412_1.jpg">
+							<p>새로 2병 생맥주 500ml</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="container" id="container_UGG">
+		<p>Discord UGG support...</p>
+		<p>우끼끼봇#6294</p>
+		<p>우꾸꾸봇#3476</p>
+		<p>contact baegul2571</p>
+	</div>
 
 </body>
 <!-- JS scroll -->
 <script>
-  const scrollContent = document.querySelector('.main_section');
-  const scrollProgress = document.querySelector('.scroll_progress');
+	const scrollProgressBars = document.querySelectorAll('.scroll_progress');
 
-  scrollContent.addEventListener('scroll', () => {
-    const scrollTop = scrollContent.scrollTop;
-    const scrollHeight = scrollContent.scrollHeight - scrollContent.clientHeight;
-    const scrolledPercent = (scrollTop / scrollHeight) * 100;
+	scrollProgressBars.forEach(progressBar => {
+		const scrollContainer = progressBar.nextElementSibling;
 
-    scrollProgress.style.width = `${scrolledPercent}%`;
-  });
-  const scrollTopBtn = document.querySelector('.main_section_toTop_button');
+		// .scroll_page 클래스가 붙은 요소만 대상
+		if (!scrollContainer || !scrollContainer.classList.contains('scroll_page')) return;
 
-  scrollTopBtn.addEventListener('click', () => {
-    scrollContent.scrollTo({
-      top: 0,
-      behavior: 'smooth' // 부드럽게 스크롤!
-    });
-    history.replaceState(null, null, window.location.pathname);
-  });
+		const toTopBtn = scrollContainer.querySelector('.main_section_toTop_button');
+
+		scrollContainer.addEventListener('scroll', () => {
+			const scrollTop = scrollContainer.scrollTop;
+			const scrollHeight = scrollContainer.scrollHeight - scrollContainer.clientHeight;
+			const scrolledPercent = (scrollTop / scrollHeight) * 100;
+			progressBar.style.width = `${scrolledPercent}%`;
+		});
+
+		if (toTopBtn) {
+			toTopBtn.addEventListener('click', () => {
+				scrollContainer.scrollTo({
+					top: 0,
+					behavior: 'smooth'
+				});
+				history.replaceState(null, null, window.location.pathname);
+			});
+		}
+	});
+
 </script>
 <!-- JS font -->
 <script>
-  let isUsingGC = false;
-  const btn = document.getElementById('fontChangeButton');
+	let isUsingGC = false;
+	const btn = document.getElementById('fontChangeButton');
 
-  const style = document.createElement('style');
-  document.head.appendChild(style);
+	const style = document.createElement('style');
+	document.head.appendChild(style);
 
-  function applyFont(fontName) {
-    style.textContent = `
+	function applyFont(fontName) {
+		style.textContent = `
     * {
       font-family: ${fontName}, sans-serif;
     }
   `;
-  }
+	}
 
-  btn.addEventListener('click', () => {
-    if (isUsingGC) {
-      applyFont("'Inter'");
-    } else {
-      applyFont("'GC'");
-    }
-    isUsingGC = !isUsingGC;
-  });
-  applyFont("'Inter'");
+	btn.addEventListener('click', () => {
+		if (isUsingGC) {
+			applyFont("'Inter'");
+		} else {
+			applyFont("'GC'");
+		}
+		isUsingGC = !isUsingGC;
+	});
+	applyFont("'Inter'");
 </script>
 <!-- JS pageSwitch -->
 <script>
-  const links = document.querySelectorAll('nav .menu a');
-  const containers = document.querySelectorAll('.container');
+	const links = document.querySelectorAll('nav .menu a');
+	const containers = document.querySelectorAll('.container');
 
-  links.forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
+	links.forEach(link => {
+		link.addEventListener('click', e => {
+			e.preventDefault();
 
-      const targetId = link.dataset.target;
-      console.log(targetId)
+			const targetId = link.dataset.target;
+			console.log(targetId)
 
-      containers.forEach(container => {
-        if (container.id === targetId) {
-          container.classList.add('active');
-        } else {
-          container.classList.remove('active');
-        }
-      });
-    });
-  });
+			containers.forEach(container => {
+				if (container.id === targetId) {
+					container.classList.add('active');
+				} else {
+					container.classList.remove('active');
+				}
+			});
+		});
+	});
 </script>
+<script>
+	// 월 토글
+	document.querySelectorAll('.month-toggle').forEach(btn => {
+		btn.addEventListener('click', () => {
+			btn.parentElement.classList.toggle('active');
+		});
+	});
+
+	// 날짜 토글
+	document.querySelectorAll('.day-toggle').forEach(btn => {
+		btn.addEventListener('click', () => {
+			btn.parentElement.classList.toggle('active');
+		});
+	});
+</script>
+
 </html>
