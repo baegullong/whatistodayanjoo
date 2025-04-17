@@ -289,3 +289,38 @@ nav .fontChange img {
     border-radius: 8px;
     margin-bottom: 8px;
 }
+
+#container_UGG {
+    height: calc(100vh - var(--nav_height) - 30px);
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.UGG_card {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(242, 243, 245);
+    border-radius: 12px;
+    padding: 12px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    overflow: hidden;
+    color: black;
+    cursor: pointer;
+}
+
+.UGG_card:hover, .UGG_card:active {
+    transform: translateY(-7.5%);
+}
+
+.UGG_card > img {
+    width: 100%;
+    max-height: 140px;
+    object-fit: contain;
+    border-radius: 8px;
+}
