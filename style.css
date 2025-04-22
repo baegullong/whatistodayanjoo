@@ -28,6 +28,7 @@ body {
 }
 
 nav {
+    position: relative;
     height: calc(var(--nav_height));
     background-color: #000;
     padding: 16px 32px;
@@ -44,7 +45,11 @@ nav .logo {
 }
 
 nav .menu {
-    margin-left: 0.7%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
 }
 
 nav .menu a {
@@ -53,6 +58,13 @@ nav .menu a {
     text-decoration: none;
     font-size: 14px;
     cursor: pointer;
+}
+
+nav .fontChange {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 1.5%;
 }
 
 nav .fontChange button {
@@ -65,7 +77,18 @@ nav .fontChange button {
     cursor: pointer;
 }
 
-nav .fontChange img {
+.nmixx {
+    height: calc(var(--nav_height) * 0.6);
+    filter: invert(100%);
+    margin-right: 10%;
+}
+
+.nswer {
+    height: calc(var(--nav_height) * 0.6);
+    margin-right: 10%;
+}
+
+#fontChangeButton img {
     height: calc(var(--nav_height) * 0.8);
 }
 
@@ -314,11 +337,12 @@ nav .fontChange img {
     cursor: pointer;
 }
 
-.UGG_card:hover, .UGG_card:active {
+.UGG_card:hover,
+.UGG_card:active {
     transform: translateY(-7.5%);
 }
 
-.UGG_card > img {
+.UGG_card>img {
     width: 100%;
     max-height: 140px;
     object-fit: contain;
