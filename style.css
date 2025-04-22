@@ -84,17 +84,6 @@ nav .fontChange button {
     cursor: pointer;
 }
 
-.nmixx {
-    height: calc(var(--nav_height) * 0.6);
-    filter: invert(100%);
-    margin-right: 10%;
-}
-
-.nswer {
-    height: calc(var(--nav_height) * 0.6);
-    margin-right: 10%;
-}
-
 #fontChangeButton img {
     height: calc(var(--nav_height) * 0.8);
 }
@@ -117,10 +106,13 @@ nav .fontChange button {
 }
 
 .profile {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.profile img {
+#profileImg {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -131,6 +123,15 @@ nav .fontChange button {
     margin-top: 16px;
     font-size: 28px;
     font-weight: bold;
+}
+
+#nmixxSvg {
+    height: 100px;
+    filter: invert(100%) grayscale(100%);
+}
+
+#nswerSvg {
+    height: 100px;
 }
 
 .tabs {
