@@ -126,12 +126,12 @@ nav .fontChange button {
 }
 
 #nmixxSvg {
-    height: 100px;
+    max-width: 10vw;
     filter: invert(100%) grayscale(100%);
 }
 
 #nswerSvg {
-    height: 100px;
+    max-width: 10vw;
 }
 
 .tabs {
